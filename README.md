@@ -486,8 +486,3 @@ Side-by-side comparison of a test image and its predicted mask:
 Overlaying the predicted mask on the original image:
 
 ![Applied Mask](images/AppliedMask.png "Applied Mask")
-
----
-**Contributions & Feedback**
-Feel free to submit issues, feature requests, or contribute to the repository!
-
