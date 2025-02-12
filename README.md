@@ -23,6 +23,7 @@ The U-Net++ architecture is a type of convolutional neural network (CNN) used fo
 - ipykernel==6.29.5
 - kaggle==1.6.17
 - matplotlib==3.10.0
+- imageio==2.37.0
 - Other dependencies (see [Installation](#installation))
 
 ## Installation
@@ -39,16 +40,14 @@ In addition to requirements.txt, you must install PyTorch from their [website](h
 After installing the repository and setting up your environment, you can use the model to perform image segmentation.
 
 ## Evaluation
-To evaluate the model I took the dice score, intersection over union score, and accuracy of the model. The metric tests are shown below and were taken after 20 epochs.
+To evaluate the model I tested the dice score, intersection over union score, and accuracy of the model on the test dataset. The metric tests are shown below and were taken after 20 epochs.
 | Metric     | Value  |
 |------------|--------|
-| IoU        | ~0.987 |
-| Dice Score | ~0.994 |
-| Accuracy   | ~99.7% |
+| IoU        | 0.989  |
+| Dice Score | 0.994  |
+| Accuracy   | 99.8%  |
 
-Intersection over Union score vs Number of Epochs:
-
-![alt text](iou_vs_epochs.png "IoU vs Epochs")
+![alt text](metric_tests.png "IoU vs Epochs")
 
 ## Results
 
