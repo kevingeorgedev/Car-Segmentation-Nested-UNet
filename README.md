@@ -69,8 +69,6 @@ The U-Net model consists of multiple levels (L), where each level includes convo
 ##### **Forward Pass**
 
 
-This keeps all the information while making it more structured and compact. Let me know if you need further refinements! 🚀
-
 ## Evaluation
 The model is evaluated on standard segmentation metrics:
 
