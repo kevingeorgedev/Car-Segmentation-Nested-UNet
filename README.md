@@ -68,27 +68,6 @@ The U-Net model consists of multiple levels (L), where each level includes convo
 - **device:** Defines the computing device.
 ##### **Forward Pass**
 
-It looks like you want to keep everything under the **2. UNET** section while ensuring clarity and conciseness. Here’s a refined version that keeps all details while reducing redundancy:
-
----
-
-### **2. UNET (Nested U-Net Model)**  
-The U-Net model consists of **L** levels, each with convolutional blocks and skip connections. It supports **deep supervision**, allowing multiple outputs at different levels to guide training.  
-
-#### **Key Features:**  
-- **Backbone:** Contracting path extracts feature maps via convolutional blocks.  
-- **Dense Nested Layers:** Multiple convolutional blocks per level.  
-- **Upsampling:** Bilinear interpolation for feature map scaling.  
-- **Deep Supervision (Optional):** Uses multiple outputs for loss calculation.  
-
-#### **Initialization Parameters:**  
-- **in_channels, out_channels:** Input/output channel sizes.  
-- **first_feature:** Initial feature size (doubles per layer).  
-- **L:** Network depth (max 4).  
-- **deep_supervision:** Enables multi-output loss calculation.  
-- **device:** Specifies computing device.  
-
----
 
 This keeps all the information while making it more structured and compact. Let me know if you need further refinements! 🚀
 
