@@ -57,6 +57,7 @@ class ConvBlock(nn.Module):
 ```
 #### 2. `UNET` (Nested U-Net Model)
 The U-Net model consists of multiple levels (L), where each level includes convolutional blocks and skip connections. It allows for deep supervision, meaning multiple outputs at different levels can be used to guide training.
+![IoU vs Epochs](images/UNET++_Architecture.png "IoU vs Epochs")
 ##### **Key Features:**
 - **Backbone:** The contracting path extracts feature maps using convolutional blocks.
 - **Dense Nested Layers:** Multiple convolutional blocks are used per level.
@@ -471,20 +472,20 @@ The model is evaluated on standard segmentation metrics:
 | Dice Score | 0.994  |
 | Accuracy   | 99.8%  |
 
-![IoU vs Epochs](metric_tests.png "IoU vs Epochs")
+![IoU vs Epochs](images/metric_tests.png "IoU vs Epochs")
 
 ## Results
 ### Predicted Mask vs. Ground Truth
 
 Side-by-side comparison of a test image and its predicted mask:
 
-![Image vs Predicted Mask](image_vs_pred.png "Image vs Predicted Mask")
+![Image vs Predicted Mask](images/image_vs_pred.png "Image vs Predicted Mask")
 
 ### Mask Applied Over Test Image
 
 Overlaying the predicted mask on the original image:
 
-![Applied Mask](AppliedMask.png "Applied Mask")
+![Applied Mask](images/AppliedMask.png "Applied Mask")
 
 ---
 **Contributions & Feedback**
